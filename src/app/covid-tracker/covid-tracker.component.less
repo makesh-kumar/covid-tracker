@@ -1,0 +1,31 @@
+.covid-tracker {
+  min-height: 64px;
+  padding: 8px 24px 0;
+
+  &__filter {
+    padding-left: 10px;
+    width: 20%;
+    top: 20px;
+    font-size: small;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding: 0 10px 10px 10px;
+    font-family: cursive;
+
+    .table__body {
+      .body__content {
+        overflow: auto;
+        max-height: 500px;
+
+        ::ng-deep .mat-sort-header-button {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
