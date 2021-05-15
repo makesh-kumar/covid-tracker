@@ -18,7 +18,7 @@ import { ButtonModule } from 'primeng/button';
 import { MatSortModule } from '@angular/material/sort';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -39,8 +39,9 @@ import { FooterComponent } from './footer/footer.component';
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
+    ToastrModule.forRoot(),
 
-    //primeng
+    // primeng
     TableModule,
     ButtonModule
   ],

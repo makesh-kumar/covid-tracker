@@ -6,11 +6,11 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
   constructor(private title: Title) { }
-  
+
   ngOnInit() {
-    this.title.setTitle("Covid-Tracker");
+    this.title.setTitle('Covid-Tracker');
   }
 }
